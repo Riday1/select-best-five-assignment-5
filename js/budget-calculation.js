@@ -17,6 +17,15 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
     const perPlayerTotalCost = perPlayerValue * playerNumber;
 
+    if (isNaN(perPlayerTotalCost)) {
+        alert('enter a number ')
+        return;
+    }
+    else if (playerNumber == 0) {
+        alert('select a player');
+        return;
+    }
+
     //step-3: set the value to PlayerExpensess Element
     setElementValueById('total-player-Cost', perPlayerTotalCost)
 
@@ -33,7 +42,16 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const coachCost = getInputFieldValue('coach-field')
 
     //ste-7 : get the value of Per Player from the element 
+    if (isNaN(managerCost)) {
+        alert("Enter a number")
+        return;
+    }
+    else if (isNaN(coachCost)) {
+        alert("Enter a number")
+        return;
+    }
     const perPlayerTotalElement = document.getElementById('total-player-Cost')
+
     const perPlayerTotalElementString = perPlayerTotalElement.innerText;
     const perPlayerTotalAmout = parseFloat(perPlayerTotalElementString);
 
