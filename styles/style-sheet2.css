@@ -1,7 +1,65 @@
-.banner-title {
-    font-size: 70px;
+/* font family style code  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Gantari:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap');
+
+
+
+/* top banner section / header section */
+.top-banner {
+    height: 70vh;
+    background-color: #000000;
+
 }
 
-.top-banner {
-    background-image: url("images/coverphoto.jpg");
+
+.banner-title {
+    font-size: 120px;
+    color: #FF5E19;
+    font-family: 'Lobster', cursive;
+}
+
+.banner-text {
+    font-size: 27px;
+    color: #FFFFFF;
+    ;
+}
+
+main {
+    background-color: #151515;
+}
+
+
+@media screen and (min-width:0px) and (max-width:576px) {
+    .top-banner {
+        height: 100vh;
+    }
+
+    .banner-title {
+        font-size: 70px;
+        ;
+    }
+
+    .banner-text {
+        font-size: 22px;
+        color: #FFFFFF;
+        ;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .top-banner {
+        height: 70vh;
+    }
+
+    .banner-title {
+        font-size: 90px;
+        ;
+    }
+
+    .banner-text {
+        font-size: 25px;
+        color: #FFFFFF;
+        ;
+    }
+
 }
