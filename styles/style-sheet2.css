@@ -3,7 +3,9 @@
 
 
 
-/* top banner section / header section */
+/*-------------------------------------
+top banner section / header section 
+------------------------------------------*/
 .top-banner {
     height: 70vh;
     background: rgba(0, 0, 0, 0.8) url('../images/coverphoto.jpg');
@@ -32,6 +34,10 @@ main {
     background-color: #151515;
 }
 
+
+/* ----------------------------------
+footer part 
+--------------------------------------- */
 .footer-info {
     background-color: #000000;
 }
@@ -42,6 +48,10 @@ main {
 }
 
 
+
+/*-------------------------------------------
+ responsiveness
+ -------------------------------------------  */
 @media screen and (min-width:0px) and (max-width:576px) {
     .top-banner {
         height: 100vh;
