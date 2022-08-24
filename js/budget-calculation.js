@@ -1,14 +1,21 @@
 
 
 
+
 //step-1: add event handler to calculate button
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
 
+    //get the number of total player from order list 
+
+    const playerLIst = document.querySelectorAll('#list-item-container li')
+    const playerNumber = playerLIst.length;
+
+
     //sep-2: get the value of perPlayer field
     const perPlayerValue = getInputFieldValue('per-player-field')
 
-    const perPlayerTotalCost = perPlayerValue * 1;
+    const perPlayerTotalCost = perPlayerValue * playerNumber;
 
     //step-3: set the value to PlayerExpensess Element
     setElementValueById('total-player-Cost', perPlayerTotalCost)
@@ -18,6 +25,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 //step-4
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
+
 
     //step-5 : get the manager Cost from manager input field
     const managerCost = getInputFieldValue('manager-field')
