@@ -27,6 +27,15 @@ main {
     background-color: #151515;
 }
 
+.footer-info {
+    background-color: #000000;
+}
+
+.h-row {
+    margin: 0px;
+    border: 2px solid gray;
+}
+
 
 @media screen and (min-width:0px) and (max-width:576px) {
     .top-banner {
