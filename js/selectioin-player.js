@@ -101,6 +101,36 @@ document.getElementById("select-vitor").addEventListener('click', function () {
     const elementValue = document.getElementById('vitor-element').innerText
     setAppendChildToParentNode(elementValue)
 })
+document.getElementById("select-alisson").addEventListener('click', function () {
+    count++;
+    if (count > 5) {
+        alert('you cant select more than 5 player')
+        return;
+    }
+    selectButtonAndDisableThem('select-alisson')
+    const elementValue = document.getElementById('alisson-element').innerText
+    setAppendChildToParentNode(elementValue)
+})
+document.getElementById("select-CR-7").addEventListener('click', function () {
+    count++;
+    if (count > 5) {
+        alert('you cant select more than 5 player')
+        return;
+    }
+    selectButtonAndDisableThem('select-CR-7')
+    const elementValue = document.getElementById('CR-7-element').innerText
+    setAppendChildToParentNode(elementValue)
+})
+document.getElementById("select-Mike").addEventListener('click', function () {
+    count++;
+    if (count > 5) {
+        alert('you cant select more than 5 player')
+        return;
+    }
+    selectButtonAndDisableThem('select-Mike')
+    const elementValue = document.getElementById('Mike-element').innerText
+    setAppendChildToParentNode(elementValue)
+})
 
 
 
