@@ -6,7 +6,12 @@
 /* top banner section / header section */
 .top-banner {
     height: 70vh;
-    background-color: #000000;
+    background: rgba(0, 0, 0, 0.8) url('../images/coverphoto.jpg');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 
 }
 
@@ -43,12 +48,12 @@ main {
     }
 
     .banner-title {
-        font-size: 70px;
+        font-size: 50px;
         ;
     }
 
     .banner-text {
-        font-size: 22px;
+        font-size: 17px;
         color: #FFFFFF;
         ;
     }
@@ -57,11 +62,29 @@ main {
 
 @media screen and (min-width:577px) and (max-width:768px) {
     .top-banner {
-        height: 70vh;
+        height: 100vh;
     }
 
     .banner-title {
-        font-size: 90px;
+        font-size: 75px;
+        ;
+    }
+
+    .banner-text {
+        font-size: 23px;
+        color: #FFFFFF;
+        ;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .top-banner {
+        height: 100vh;
+    }
+
+    .banner-title {
+        font-size: 100px;
         ;
     }
 
